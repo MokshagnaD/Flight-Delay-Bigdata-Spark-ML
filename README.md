@@ -28,7 +28,7 @@ Methods indicated in the analytical questions are from this Spark API https://sp
 All of the CSV files are read and DataFrame is used to make an equi-join across these three DataFrames using the given column name. The logic is implemented in the beforeAll(..) test method. The parquet files are generated only once and re-used across all the tests. The parquet file is partitioned based on the airline code, and hence the directory structured is fragmented based on the airline code.<br/>
 For every test execution, we first read the parquet file from the disk. Internally, Spark parallelizes operation generates the first RDD, ParallelCollectionRDD. Finally, a MapPartiionsRDD is created by using mapParitions transformation.<br/>
 
-![DF Caching](data/problem_1.png)
+![DF Caching](docs/images/problem_1.png)
 
 **NOTE 1:** Since this step is shared across all tests, I shall skip repeating the same while explaining the "Spark Internals" for every test. <br/>
 **NOTE 2:** The driver and executor process is run on the same JVM thread as the code is run in a local mode. <br/>
@@ -52,13 +52,13 @@ Step 1: A job is created to read the parquet file from the disk<br/>
 Step 2: A job is run for the first count operation on the entire dataframe, this step took the longest<br/>
 Step 3: Multiple jobs are created when we execute the count function on the filtered dataframes <br/><br/>
 
-![DF Caching](data/problem1_with_cache.png)
+![DF Caching](docs/images/problem1_with_cache.png)
 
 **NOTE 3:** Since this step is repeated across all tests, I shall skip explaining the read parquet operation for subsequent  "Spark Internals"<br/>
 
 The count operation, consists of WholeStageCodegen step (as shown below), which uses the cached values. Next, it does an InMemoryTableScan (to perform filtering based on filter condition in the code)
 
-![DF Caching](data/problem_1_0.png)
+![DF Caching](docs/images/problem_1_0.png)
 
 There are 5 more jobs that repeat these steps as we filter based on different delay conditions, before performing a count.
 
@@ -75,7 +75,7 @@ Finally a Spark action is applied when we do a count and return top 4 records.
 
 - Spark Internals:
 
-![DF Caching](data/problem_2.png)
+![DF Caching](docs/images/problem_2.png)
 
 Filter is a narrow transformation and hence data is not shuffled from one partition to another.
 The filter operation is followed by a multi column groupBy, which is a wide operation and hence requires mapping the data across multiple partitions.
@@ -92,7 +92,7 @@ Since, spark DataFrame transformations are immutable, the withColumn function re
 
 - Spark Internals:
 
-![DF Caching](data/problem3_pic.png)
+![DF Caching](docs/images/problem3_pic.png)
 
 Two stages are created for each filter and count() operation on the dataframe :
 
@@ -118,7 +118,7 @@ ArrDel15 > 0 and CarrierDelay > 0 and Origin = 'MSY'
 ```
 
 - Spark Internals:
-![DF Caching](data/problem4_pic.png)
+![DF Caching](docs/images/problem4_pic.png)
 
 Two stages are created for each filter,groupBy operation on the dataframe :
 We will see these stages repeated 5 times as we have five such operations for the five different delay types
@@ -139,7 +139,7 @@ ArrDel15 > 0 and CarrierDelay > 0
 
 - Spark Internals:
 
-![DF Caching](data/problem5_pic.png)
+![DF Caching](docs/images/problem5_pic.png)
 
 In Stage 1, FileScanRDD -> MapPartitionsRDD
 In Stage 2, ShuffledRowRDD -> MapPartitionsRDD
@@ -147,7 +147,7 @@ In Stage 2, ShuffledRowRDD -> MapPartitionsRDD
 Step 1: A job is created to read the parquet file from the disk<br/>
 Step 2: A job is run for the first count operation after the filter query on the dataframe. The job has two tasks that run in parallel to complete the task<br/>
 Step 3: Step 2 is repeated for the second dataframe<br/><br/>
-![DF Caching](data/problem5_with_cache.png)
+![DF Caching](docs/images/problem5_with_cache.png)
 
 
 ## Code Overview

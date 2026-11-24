@@ -1,0 +1,419 @@
+{
+  "summary": {
+    "total_flights": 6847899,
+    "completed_flights": 6743403,
+    "delayed_flights": 1386699,
+    "ontime_flights": 5356704,
+    "cancelled_flights": 87943,
+    "diverted_flights": 16552,
+    "delay_rate_pct": 20.56,
+    "cancel_rate_pct": 1.28,
+    "analysis_duration_sec": 12.96
+  },
+  "carrier_rankings": [
+    {
+      "carrier": "YX",
+      "total": 286489,
+      "delayed": 37435,
+      "delay_rate": 13.066819319415405
+    },
+    {
+      "carrier": "9E",
+      "total": 196905,
+      "delayed": 27403,
+      "delay_rate": 13.916863462075622
+    },
+    {
+      "carrier": "OO",
+      "total": 664861,
+      "delayed": 108100,
+      "delay_rate": 16.25903760334867
+    },
+    {
+      "carrier": "DL",
+      "total": 972931,
+      "delayed": 159257,
+      "delay_rate": 16.368786686825683
+    },
+    {
+      "carrier": "OH",
+      "total": 191072,
+      "delayed": 31750,
+      "delay_rate": 16.61677273488528
+    },
+    {
+      "carrier": "MQ",
+      "total": 224695,
+      "delayed": 40793,
+      "delay_rate": 18.154832105743342
+    },
+    {
+      "carrier": "AS",
+      "total": 242643,
+      "delayed": 47648,
+      "delay_rate": 19.637079989944073
+    },
+    {
+      "carrier": "UA",
+      "total": 720032,
+      "delayed": 148386,
+      "delay_rate": 20.60825074441136
+    },
+    {
+      "carrier": "WN",
+      "total": 1421238,
+      "delayed": 309963,
+      "delay_rate": 21.809366200453407
+    },
+    {
+      "carrier": "AA",
+      "total": 928058,
+      "delayed": 213850,
+      "delay_rate": 23.04274086317881
+    },
+    {
+      "carrier": "G4",
+      "total": 114425,
+      "delayed": 29653,
+      "delay_rate": 25.91479134804457
+    },
+    {
+      "carrier": "NK",
+      "total": 258838,
+      "delayed": 75428,
+      "delay_rate": 29.141007116420308
+    },
+    {
+      "carrier": "B6",
+      "total": 267915,
+      "delayed": 83550,
+      "delay_rate": 31.185263982979677
+    },
+    {
+      "carrier": "F9",
+      "total": 173459,
+      "delayed": 54525,
+      "delay_rate": 31.433941161888402
+    }
+  ],
+  "top_airports": [
+    {
+      "origin": "ATL",
+      "total": 332935,
+      "delayed": 64792,
+      "delay_rate": 19.460855722588494
+    },
+    {
+      "origin": "DEN",
+      "total": 284200,
+      "delayed": 73011,
+      "delay_rate": 25.69000703729768
+    },
+    {
+      "origin": "DFW",
+      "total": 280021,
+      "delayed": 67166,
+      "delay_rate": 23.986058188493008
+    },
+    {
+      "origin": "ORD",
+      "total": 255071,
+      "delayed": 56170,
+      "delay_rate": 22.02131955416335
+    },
+    {
+      "origin": "CLT",
+      "total": 192870,
+      "delayed": 43857,
+      "delay_rate": 22.739150723285114
+    },
+    {
+      "origin": "LAX",
+      "total": 192260,
+      "delayed": 36020,
+      "delay_rate": 18.735046291480288
+    },
+    {
+      "origin": "LAS",
+      "total": 188206,
+      "delayed": 50482,
+      "delay_rate": 26.822736788412698
+    },
+    {
+      "origin": "PHX",
+      "total": 175144,
+      "delayed": 32663,
+      "delay_rate": 18.649225779929658
+    },
+    {
+      "origin": "SEA",
+      "total": 162441,
+      "delayed": 31625,
+      "delay_rate": 19.468607063487667
+    },
+    {
+      "origin": "MCO",
+      "total": 161846,
+      "delayed": 46421,
+      "delay_rate": 28.682204070536187
+    },
+    {
+      "origin": "LGA",
+      "total": 158800,
+      "delayed": 29168,
+      "delay_rate": 18.367758186397985
+    },
+    {
+      "origin": "BOS",
+      "total": 137555,
+      "delayed": 31090,
+      "delay_rate": 22.601868343571663
+    },
+    {
+      "origin": "DCA",
+      "total": 137541,
+      "delayed": 24514,
+      "delay_rate": 17.82304912716935
+    },
+    {
+      "origin": "EWR",
+      "total": 134398,
+      "delayed": 30737,
+      "delay_rate": 22.870131996011843
+    },
+    {
+      "origin": "SFO",
+      "total": 133925,
+      "delayed": 27548,
+      "delay_rate": 20.56972185924958
+    },
+    {
+      "origin": "JFK",
+      "total": 129620,
+      "delayed": 30016,
+      "delay_rate": 23.15692022835982
+    },
+    {
+      "origin": "DTW",
+      "total": 124348,
+      "delayed": 20981,
+      "delay_rate": 16.872808569498503
+    },
+    {
+      "origin": "MSP",
+      "total": 120279,
+      "delayed": 19018,
+      "delay_rate": 15.811571429759145
+    },
+    {
+      "origin": "IAH",
+      "total": 110392,
+      "delayed": 24949,
+      "delay_rate": 22.60036959199942
+    },
+    {
+      "origin": "SLC",
+      "total": 108169,
+      "delayed": 18375,
+      "delay_rate": 16.98730689938892
+    },
+    {
+      "origin": "MIA",
+      "total": 101189,
+      "delayed": 27572,
+      "delay_rate": 27.24802102995385
+    }
+  ],
+  "hourly_delays": {
+    "0": {
+      "total": 10764,
+      "delayed": 2268
+    },
+    "1": {
+      "total": 3769,
+      "delayed": 1005
+    },
+    "2": {
+      "total": 1688,
+      "delayed": 387
+    },
+    "3": {
+      "total": 681,
+      "delayed": 181
+    },
+    "4": {
+      "total": 416,
+      "delayed": 92
+    },
+    "5": {
+      "total": 193841,
+      "delayed": 17024
+    },
+    "6": {
+      "total": 485275,
+      "delayed": 48823
+    },
+    "7": {
+      "total": 458247,
+      "delayed": 57260
+    },
+    "8": {
+      "total": 449771,
+      "delayed": 62142
+    },
+    "9": {
+      "total": 378457,
+      "delayed": 57554
+    },
+    "10": {
+      "total": 423395,
+      "delayed": 67289
+    },
+    "11": {
+      "total": 416422,
+      "delayed": 72702
+    },
+    "12": {
+      "total": 400542,
+      "delayed": 75645
+    },
+    "13": {
+      "total": 403151,
+      "delayed": 85786
+    },
+    "14": {
+      "total": 381173,
+      "delayed": 87920
+    },
+    "15": {
+      "total": 385806,
+      "delayed": 94644
+    },
+    "16": {
+      "total": 382123,
+      "delayed": 100953
+    },
+    "17": {
+      "total": 410564,
+      "delayed": 112024
+    },
+    "18": {
+      "total": 410495,
+      "delayed": 115493
+    },
+    "19": {
+      "total": 366076,
+      "delayed": 106284
+    },
+    "20": {
+      "total": 305762,
+      "delayed": 91117
+    },
+    "21": {
+      "total": 235717,
+      "delayed": 66320
+    },
+    "22": {
+      "total": 177400,
+      "delayed": 49175
+    },
+    "23": {
+      "total": 61868,
+      "delayed": 14611
+    }
+  },
+  "monthly_delays": {
+    "1": {
+      "total": 527197,
+      "delayed": 116713
+    },
+    "2": {
+      "total": 492747,
+      "delayed": 92969
+    },
+    "3": {
+      "total": 571533,
+      "delayed": 136044
+    },
+    "4": {
+      "total": 550249,
+      "delayed": 125882
+    },
+    "5": {
+      "total": 575429,
+      "delayed": 104119
+    },
+    "6": {
+      "total": 562804,
+      "delayed": 152268
+    },
+    "7": {
+      "total": 585058,
+      "delayed": 167080
+    },
+    "8": {
+      "total": 592142,
+      "delayed": 128439
+    },
+    "9": {
+      "total": 560887,
+      "delayed": 104699
+    },
+    "10": {
+      "total": 596003,
+      "delayed": 92985
+    },
+    "11": {
+      "total": 562413,
+      "delayed": 76348
+    },
+    "12": {
+      "total": 566941,
+      "delayed": 89153
+    }
+  },
+  "dayofweek_delays": {
+    "1": {
+      "total": 996633,
+      "delayed": 202713
+    },
+    "2": {
+      "total": 937570,
+      "delayed": 164062
+    },
+    "3": {
+      "total": 951327,
+      "delayed": 183055
+    },
+    "4": {
+      "total": 998363,
+      "delayed": 214589
+    },
+    "5": {
+      "total": 1003622,
+      "delayed": 225705
+    },
+    "6": {
+      "total": 870955,
+      "delayed": 173933
+    },
+    "7": {
+      "total": 984933,
+      "delayed": 222642
+    }
+  },
+  "yearly_trends": {
+    "2023": {
+      "total": 6847899,
+      "delayed": 1386699,
+      "cancelled": 87943
+    }
+  },
+  "delay_causes": {
+    "CarrierDelay": 787890,
+    "WeatherDelay": 71999,
+    "NASDelay": 660785,
+    "SecurityDelay": 8148,
+    "LateAircraftDelay": 711118
+  }
+}

@@ -1,0 +1,43 @@
+# Large multi-gigabyte datasets (>100MB blocked by GitHub)
+# Use `python download_dataset.py` to fetch Parquet partitions
+data/flight_parquet/
+
+# Large model binaries (>50MB triggers GitHub warning)
+models/flight_delay_rf_model.joblib
+
+# Local Windows directory junction at root (true data preserved in data/airline_and_plane)
+/airline_and_plane
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+
+# JVM & Scala / sbt build targets
+target/
+project/target/
+project/project/
+.bsp/
+*.class
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log

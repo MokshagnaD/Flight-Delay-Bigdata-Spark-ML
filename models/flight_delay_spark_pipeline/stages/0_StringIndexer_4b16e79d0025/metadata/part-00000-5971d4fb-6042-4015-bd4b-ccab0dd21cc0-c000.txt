@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1795204488922,"sparkVersion":"4.3.0","uid":"StringIndexer_4b16e79d0025","paramMap":{"handleInvalid":"keep","inputCol":"Reporting_Airline","outputCol":"airlineIdx"},"defaultParamMap":{"handleInvalid":"error","outputCol":"StringIndexer_4b16e79d0025__output","stringOrderType":"frequencyDesc"}}

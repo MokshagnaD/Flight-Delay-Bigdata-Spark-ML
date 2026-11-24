@@ -1,0 +1,14 @@
+# Core Big Data & ML Libraries
+numpy>=1.24.0
+pandas>=2.0.0
+pyarrow>=12.0.0
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+joblib>=1.3.0
+
+# Distributed Big Data Computing
+pyspark>=3.4.0
+
+# Interactive Dashboard & Visualization
+streamlit>=1.30.0
+altair>=5.0.0
